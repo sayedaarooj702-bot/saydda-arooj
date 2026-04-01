@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- ===== LOADER ===== -->
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+    <span class="loader-text">Loading...</span>
+  </div>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>SAYYDA AROOJ<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#education" class="nav-link">education</a></li>
+        <li><a href="#skills" class="nav-link">skills</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HOME ===== -->
+  <section class="section hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text" data-aos>
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-name">SAYYDA <span class="accent"> AROOJ</span></h1>
+        <div class="hero-role">
+          <span class="role-prefix">I'm a</span>
+          <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-desc">
+          I build beautiful, performant digital experiences that leave a lasting impression. Welcome to my creative space.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual" data-aos>
+        <div class="profile-frame">
+          <div class="profile-img-wrapper">
+            <!-- Replace the src with your own image path -->
+            <img src="pf.jpg" alt="Profile Picture" class="profile-img" id="profileImg"/>
+            <div class="profile-ring"></div>
+            <div class="profile-dot dot-1"></div>
+            <div class="profile-dot dot-2"></div>
+            <div class="profile-dot dot-3"></div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col" data-aos>
+          <div class="about-img-container">
+            <img src="pf.jpg" alt="About Me" class="about-img"/>
+            <div class="about-img-overlay"></div>
+            <div class="about-exp-card">
+              <i class="fas fa-code"></i>
+              <div>
+                <strong>web designer</strong>
+                <span> &Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content-col" data-aos>
+          <h3 class="about-subtitle">Crafting Code with Passion & Purpose</h3>
+          <p class="about-bio">
+            Hi there! I'm <strong>sayyda arooj</strong>, a passionate web developer based in [pakistan]. I enjoy designing, responsive, and user-friendly websites that solve real-world problems. With a strong foundation in front-end and back-end technologies, I bring ideas to life through clean code and thoughtful design.
+          </p>
+          <p class="about-bio">
+            When I'm not coding, you'll find me exploring new technologies, contributing to open source, or enjoying a good cup of coffee ☕. i'm eager to grow my skillsand contribute to meaningful projects.
+            <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="skill-item"><i class="fab fa-js-square"></i> JavaScript</div>
+            
+           <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+          </div>
+          <a href="#" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== EDUCATION ===== -->
+<section class="section education-section" id="education">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <span class="section-tag">My Journey</span>
+      <h2 class="section-title">Edu<span class="accent">cation</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+
+      <!-- CARD 1 -->
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="timeline-meta">
+              <span class="timeline-date">2023 – presen</span>
+              <span class="timeline-badge">Degree</span>
+            </div>
+          </div>
+          <h3 class="timeline-title">Bachelor of Science in information technology(6th sem)</h3>
+          <p class="timeline-place"><i class="fas fa-university"></i>govt,college uni faislabad</p>
+          <p class="timeline-desc">Studing core CS fundamentals including data structures, algorithms, databases, and software engineering. currently pursuing with focus on web development.</p>
+          <div class="timeline-tags">
+            <span>CGPA: 3.8/4.0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-icon"><i class="fas fa-school"></i></div>
+            <div class="timeline-meta">
+              <span class="timeline-date">2020 – 2022</span>
+              <span class="timeline-badge">Intermediate</span>
+            </div>
+          </div>
+          <h3 class="timeline-title">Intermediate in Pre-medical</h3>
+          <p class="timeline-place"><i class="fas fa-university"></i> govt college gakhar</p>
+          <p class="timeline-desc">Completed intermediate studies with a focus on bio, Physics, and chemistry.and then develop interest in IT nd now i'm passionately learning info tecnology.</p>
+          <div class="timeline-tags">
+            <span>90% Marks</span>
+            <span>Top 5%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+            <div class="timeline-meta">
+              <span class="timeline-date">2027</span>
+              <span class="timeline-badge">certificate</span>
+            </div>
+          </div>
+          <h3 class="timeline-title">Full-Stack Web Development Bootcamp</h3>
+          <p class="timeline-place"><i class="fas fa-laptop-code"></i>I-TECH,GRW</p>
+          <p class="timeline-desc">Completed an intensive bootcamp covering web designing & developing, Node.js, MongoDB, and REST API design. Built 5 real-world projects as part of the curriculum.</p>
+          <div class="timeline-tags">
+            <span>html5 & css3</span>
+            <span>wordpres</span>
+            <span>java script</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✅ TO ADD MORE: Copy any timeline-item block above and paste here -->
+
+    </div>
+  </div>
+</section>
+<!-- ===== SKILLS ===== -->
+<section class="section skills-section" id="skills">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <span class="section-tag">What I Know</span>
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      <div class="section-line"></div>
+      <p class="section-desc">Technologies and tools I work with every day.</p>
+    </div>
+
+    <div class="skills-categories" data-aos>
+
+      <!-- CATEGORY 1 -->
+      <div class="skill-category-card">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <h3>Frontend</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>HTML</span><span>95%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>JavaScript</span><span>85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>css</span><span>80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar-item">
+          </div>
+        </div>
+      </div>
+
+      <!-- CATEGORY 2 -->
+      <div class="skill-category-card">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon" style="background:rgba(255,99,71,0.15);color:var(--tomato)"><i class="fas fa-server"></i></div>
+          <h3>CMS</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>wordpress</span><span>89%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill tomato" data-width="89"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>elementor page builder</span><span>85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill tomato" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>theme customization</span><span>70%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill tomato" data-width="70"></div></div>
+          </div>
+          <div class="skill-bar-item">
+          </div>
+        </div>
+      </div>
+
+      <!-- CATEGORY 3 -->
+      <div class="skill-category-card">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon" style="background:rgba(32,201,151,0.15);color:var(--green)"><i class="fas fa-tools"></i></div>
+          <h3>Tools & Others</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Git & GitHub</span><span>90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill green" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>VS Code</span><span>95%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill green" data-width="95"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /skills-categories -->
+
+    <!-- Tech icon badges row -->
+    <div class="tech-badges" data-aos>
+      <div class="tech-badge"><i class="fab fa-html5"></i><span>HTML5</span></div>
+      <div class="tech-badge"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+      <div class="tech-badge"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+      <div class="tech-badge"><i class="fab fa-git-alt"></i><span>Git</span></div>
+      <!-- ✅ Add more badges here following the same pattern -->
+    </div>
+
+  </div>
+</section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+        <div class="section-line"></div>
+        <p class="section-desc">A collection of projects I've built — click any card to learn more.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="project-filters" data-aos>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      <!-- Projects Grid — ADD AS MANY CARDS AS YOU WANT HERE -->
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- PROJECT CARD 1 -->
+        <div class="project-card" data-category="web" data-aos>
+          <div class="project-img-wrapper">
+            <!-- Replace src with your project screenshot -->
+            <img src="Pink Cute Sweet Elegant Glasses Optic Store Logo.jpg" alt="Project 1" class="project-img"/>
+            <div class="project-overlay">
+              <a href="#" class="project-overlay-btn" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-overlay-btn" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-category">Web</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <p class="project-desc">A full-stack e-commerce app with product listings, cart, authentication, and Stripe payment integration.</p>
+            <div class="project-tags">
+              <span>word press</span><span>elementor</span><span>responsive design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 2 -->
+        <div class="project-card" data-category="mobile" data-aos>
+          <div class="project-img-wrapper">
+            <img src="pf.jpg" alt="Project 2" class="project-img"/>
+            <div class="project-overlay">
+              <a href="#" class="project-overlay-btn" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-overlay-btn" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-category">Mobile</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">my personal portfolio</h3>
+            <p class="project-desc">a personal portfolio website created to show my skills,project and growth in web development</p>
+            <div class="project-tags">
+              <span>html</span><span>css</span><span>js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 3 -->
+        <div class="project-card" data-category="design" data-aos>
+          <div class="project-img-wrapper">
+            <img src="reys-logo-transparant-1.png" alt="Project 3" class="project-img"/>
+            <div class="project-overlay">
+              <a href="#" class="project-overlay-btn" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-overlay-btn" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-category">Design</span>
+              <span class="project-year">2023</span>
+            </div>
+            <h3 class="project-title">business website</h3>
+            <p class="project-desc">a responsive business website creted to present services,brand identity and a professionl online presence</p>
+            <div class="project-tags">
+              <span>wordpress</span><span>elementor</span><span>elementor pro</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ✅ TO ADD MORE PROJECTS: Copy a project-card block above and paste here.
+             Change the image src, title, description, tags, links, and data-category.
+             Categories: "web", "mobile", "design" — or add your own filter button! -->
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos>
+          <h3>Let's work together!</h3>
+          <p>Have a project in mind or just want to say hi? My inbox is always open. I'll get back to you within 24 hours.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div><strong>Email</strong><span>sayedaarooj702@gmail.com</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div><strong>Location</strong><span>GRW,PAKISTAN</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div><strong>Phone</strong><span>+923404412776</span></div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-col" data-aos>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">full name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required/>
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">email address</label>
+              <input type="email" id="email" name="email" placeholder="example@gmail.com" required/>
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry"/>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-text">Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i> Message sent! I'll reply soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>sayyda arooj<span class="logo-bracket">/&gt;</span>
+      </a>
+      <p class="footer-copy">© <span id="year"></span> AROOJ. Crafted with <span class="heart">❤</span> & coffee.</p>
+      <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
